@@ -24,7 +24,23 @@ for(let i=0; i<completedButton.length; i++)
     document.getElementById('complete-task').innerText=updatedCompletedTask;
     // 4. button disable 
     button.setAttribute('disabled', ''); 
-    
+    // 6. Passing message to activity log + dynamic title +  dynamic time 
+    let cardTitle = button.closest('.card-item-container').querySelector('.card-title').innerText;
+    let curTime=new Date().toLocaleString();
+    let div=document.createElement('div');
+    div.innerHTML=`
+        You have completed <strong>${cardTitle}</strong> at ${curTime}
+    `
+    div.classList.add('bg-gray-100', 'rounded-lg', 'shadow-sm', 'p-4');
+     document.getElementById('message-box').appendChild(div);
+
 
     })
 }
+// Clear Activity History button
+document.getElementById('clear-history').addEventListener('click',function(event){
+    let messageBox=document.getElementById('message-box');
+    messageBox.innerText="";
+
+
+})

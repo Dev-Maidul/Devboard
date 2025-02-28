@@ -69,7 +69,7 @@
                     <!-- single card-container 1-->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">ShopEase</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Fix Mobile Button Issue </h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Fix Mobile Button Issue </h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         <br>    and ensure onClick works properly</p>
                         <div class="deadline-container flex items-center justify-between">
@@ -83,7 +83,7 @@
                     <!-- single card-container 2-->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">CloudSync</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Add Dark Mode</h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Add Dark Mode</h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         <div class="deadline-container flex items-center justify-between">
                             <div class="date">
@@ -96,7 +96,7 @@
                     <!-- single card-container 3-->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">SwiftPay</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Optimize  Home page </h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Optimize  Home page </h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="deadline-container flex items-center justify-between">
@@ -110,7 +110,7 @@
                     <!-- single card-container 4 -->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Meta</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Add new emoji 🤲</h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Add new emoji 🤲</h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="deadline-container flex items-center justify-between">
@@ -124,7 +124,7 @@
                     <!-- single card-container 5-->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Google LLC</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Integrate OpenAI API </h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Integrate OpenAI API </h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="deadline-container flex items-center justify-between">
@@ -138,7 +138,7 @@
                     <!-- single card-container 6-->
                     <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
                         <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Glassdoar</span>
-                        <h4 class="mt-5 mb-5 font-bold p-1">Improve Job searching </h4>
+                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Improve Job searching </h4>
                         <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                             and ensure onClick works properly</p>
                         <div class="deadline-container flex items-center justify-between">
@@ -158,13 +158,18 @@
 
             <!-- Dashboard Right Part -->
             <div class="dash-board-right w-[500px] bg-[rgb(255,255,255)] rounded-xl shadow-xl p-10">
-                <div class="log-container">
+                <div class="log-container mb-3">
                     <div class="icon flex justify-center items-center gap-3 py-2">
                         <img src="./assets/activity.png" alt="">
                         <div class="textt">Activity Log</div>
                     </div>
-                    <button class="btn btn-primary">Clear History</button>
+                    <button id="clear-history" class="btn btn-primary mt-5">Clear History</button>
                 </div>
+                <hr">
+                <!-- Message container -->
+                 <div id="message-box" class="message-conatiner grid grid-cols-1 gap-4">
+
+                 </div>
             </div>
         </div>
     </section>
@@ -174,14 +179,19 @@
 
 
 <!-- 
-    clear history button e click korle shob remove hobe
+    
 
 1.Alert Board updated Successfully ====done
 2. Task assign kombe =====done
 3. chekbox value barbe ======done
 4. button disable hobe ======done
-5. activity log e message jabe You have completed+ dynamic title +  dynamict time 
-6. last complte button e double alert thakbe ======done
+5. last complte button e double alert thakbe ======done
+6. activity log e message jabe You have completed+ dynamic title +  dynamict time ====== done
+7.clear history button e click korle shob remove hobe
+8.All html time dynamic
+9. theme change
+10. discover section click to new page redirect
+11. design correction
 
 
 -->
