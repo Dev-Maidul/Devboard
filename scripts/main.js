@@ -8,7 +8,9 @@ for(let time of setTimes)
     time.innerHTML=timeFormat;
 }
 
-
+let historyTime=document.getElementById('history-time');
+let taskTime=timeAndDate2(cardCurTime);
+historyTime.innerHTML=taskTime;
 // add event listner for all button
 for(let i=0; i<completedButton.length; i++)
 {
