@@ -1,5 +1,12 @@
 let completedButton= document.querySelectorAll('.completed');
-
+// all Dynamic time and date
+let cardCurTime=new Date();
+let timeFormat=timeAndDate(cardCurTime);
+let setTimes=document.querySelectorAll('.cur-time');
+for(let time of setTimes)
+{
+    time.innerHTML=timeFormat;
+}
 
 
 // add event listner for all button
