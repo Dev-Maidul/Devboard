@@ -7,11 +7,91 @@
 <script src="https://cdn.tailwindcss.com"></script>
     <title>DevBoard</title>
 </head>
-<body>
-    
+<body class="bg-red-600">
+    <section class="full-website-container w-11/12 mx-auto">
+        <!-- Header section  -->
+    <header class="py-4">
+        <nav class="flex justify-between items-center bg-[rgb(255,255,255)] p-5 rounded-lg shadow-lg">
+             <div class="nav-left flex justify-center items-center gap-4">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="brand">Dev<span class="font-bold">Board</span></div>
+             </div>     
+             <div class="nav-right flex justify-between items-center gap-8">
+                <div class="checkbox flex justify-center items-center bg-[rgb(244,247,255)] rounded-lg gap-2">
+                    <img class="" src="./assets/checkbox.png" alt="">
+                    <h1 class="font-bold">23</h1>
+                </div>
+                <div class="coler-picker">
+                    <img src="./assets/theme-btn.png" alt="">
+                </div>
+             </div>     
+        </nav>
+    </header>
+    <!-- Main Layout  -->
+    <section class="py-4">
+        <div class="dashboard-container flex gap-8">
+            <!-- Dashboard Left Part Container-->
+            <div class="dash-board-left w-9/11">
+                <!-- Dashboard Left Top bar -->
+                <div class="discover-today-container flex gap-4">
+                    <div class="disconver-left-continer flex gap-4 items-center justify-start bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14">
+                        <div class="icon">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div class="task">
+                            <h2>Task Assign</h2>
+                            <strong class="text-center ml-5">05</strong>
+                        </div>
+                    </div>
+                    <div class="disconver-midlle-continer flex gap-4 items-center justify-start bg-[linear-gradient(130.7deg,rgb(55,82,253)0.42%,rgb(108,127,250)52.66%,rgb(155,168,248)99.73%)]
+                    rounded-xl shadow-xl px-40">
+                        <div class="icon">
+                            <img src="./assets/board.png" alt="">
+                        </div>
+                        <div class="discover">
+                            <p class="text-white">Discover Something <br> New Today!</p>
+                        </div>
+                    </div>
+                    <div class="disconver-right-continer flex gap-4 items-start justify-center bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14">
+                        <div class="icon">
+                            <img src="./assets/activity.png" alt="">
+                        </div>
+                        <div class="task">
+                            <h2>Wed,</h2>
+                            <strong class="text-center">Jul 28,2025</strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dashboard 6 card grid Layout -->
+                 
+            </div>
+
+            <!-- Dashboard Right Part -->
+            <div class="dash-board-right w-2/11 bg-[rgb(255,255,255)] rounded-xl shadow-xl p-10">
+                <div class="log-container">
+                    <div class="icon flex justify-center items-center gap-3 py-2">
+                        <img src="./assets/activity.png" alt="">
+                        <div class="textt">Activity Log</div>
+                    </div>
+                    <button class="btn btn-primary">Clear History</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
+
+
+
+
+
+
+
+
+    </section>
     <script src="./scripts/utilities.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
