@@ -1,183 +1,268 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-    <title>DevBoard</title>
-</head>
-<body class="bg-[rgb(244,247,255)]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+  </head>
+  <body class="bg-[rgb(244,247,255)]">
     <section class="full-website-container w-11/12 mx-auto">
-        <!-- Header section  -->
-    <header class="py-4">
-        <nav class="flex justify-between items-center bg-[rgb(255,255,255)] p-5 rounded-lg shadow-lg">
-             <div class="nav-left flex justify-center items-center gap-4">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="">
-                </div>
-                <div class="brand">Dev<span class="font-bold">Board</span></div>
-             </div>     
-             <div class="nav-right flex justify-between items-center gap-8">
-                <div class="checkbox flex justify-center items-center bg-[rgb(244,247,255)] rounded-lg gap-2">
-                    <img class="" src="./assets/checkbox.png" alt="">
-                    <h1 id="complete-task" class="font-bold">10</h1>
-                </div>
-                <div class="coler-picker">
-                    <img src="./assets/theme-btn.png" alt="">
-                </div>
-             </div>     
+      <!-- Header section  -->
+      <header class="py-4">
+        <nav
+          class="flex justify-between items-center bg-[rgb(255,255,255)] p-5 rounded-lg shadow-lg"
+        >
+          <div class="nav-left flex justify-center items-center gap-4">
+            <div class="logo">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <div class="brand">Dev<span class="font-bold">Board</span></div>
+          </div>
+          <div class="nav-right flex justify-between items-center gap-8">
+            <div
+              class="checkbox flex justify-center items-center bg-[rgb(244,247,255)] rounded-lg gap-2"
+            >
+              <img class="" src="./assets/checkbox.png" alt="" />
+              <h1 id="complete-task" class="font-bold">10</h1>
+            </div>
+            <div class="coler-picker">
+              <img
+                id="theme"
+                class="cursor-pointer"
+                src="./assets/theme-btn.png"
+                alt=""
+              />
+            </div>
+          </div>
         </nav>
-    </header>
-    <!-- Main Layout  -->
-    <section class="py-4">
+      </header>
+      <!-- Main Layout  -->
+      <section class="py-4">
         <div class="dashboard-container flex gap-8">
-            <!-- Dashboard Left Part Container-->
-            <div class="dash-board-left w-7/11">
-                <!-- Dashboard Left Top bar -->
-                <div class="discover-today-container flex gap-4">
-                    <div class="disconver-left-continer flex gap-4 items-center justify-start bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14">
-                        <div class="icon">
-                            <img src="./assets/checkbox.png" alt="">
-                        </div>
-                        <div class="task">
-                            <h2>Task Assign</h2>
-                            <strong id="Task-assign" class="text-center ml-5">6</strong>
-                        </div>
-                    </div>
-                    <div class="disconver-midlle-continer flex gap-4 items-center justify-start bg-[linear-gradient(130.7deg,rgb(55,82,253)0.42%,rgb(108,127,250)52.66%,rgb(155,168,248)99.73%)]
-                    rounded-xl shadow-xl px-40">
-                        <div class="icon">
-                            <img src="./assets/board.png" alt="">
-                        </div>
-                        <div class="discover">
-                            <p class="text-white">Discover Something <br> New Today!</p>
-                        </div>
-                    </div>
-                    <div class="disconver-right-continer flex gap-4 items-start justify-center bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14">
-                        <div class="icon">
-                            <img src="./assets/calender.png" alt="">
-                        </div>
-                        <div id="history-time" class="task">
-                            
-                        </div>
-                    </div>
+          <!-- Dashboard Left Part Container-->
+          <div class="dash-board-left w-7/11">
+            <!-- Dashboard Left Top bar -->
+            <div class="discover-today-container flex gap-4 border-b-red-800">
+              <div
+                class="disconver-left-continer flex gap-4 items-center justify-start bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14"
+              >
+                <div class="icon">
+                  <img src="./assets/checkbox.png" alt="" />
                 </div>
-                <!-- Dashboard 6 card grid Layout -->
-                 <div class="six-card-grid-container grid grid-cols-3 gap-4 py-7">
-                    <!-- single card-container 1-->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">ShopEase</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Fix Mobile Button Issue </h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        <br>    and ensure onClick works properly</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                            <p class="cur-time"></p>
-                            </div>
-                            <button class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                    <!-- single card-container 2-->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">CloudSync</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Add Dark Mode</h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                            <p class="cur-time"></p>
-                            </div>
-                            <button class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                    <!-- single card-container 3-->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">SwiftPay</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Optimize  Home page </h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                                <p class="cur-time"></p>
-                            </div>
-                            <button class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                    <!-- single card-container 4 -->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Meta</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Add new emoji 🤲</h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                                <p class="cur-time"></p>
-                            </div>
-                            <button class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                    <!-- single card-container 5-->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Google LLC</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Integrate OpenAI API </h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                                <p class="cur-time"></p>
-                            </div>
-                            <button class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                    <!-- single card-container 6-->
-                    <div class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8">
-                        <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Glassdoar</span>
-                        <h4 class="card-title mt-5 mb-5 font-bold p-1">Improve Job searching </h4>
-                        <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                            and ensure onClick works properly</p>
-                        <div class="deadline-container flex items-center justify-between">
-                            <div class="date">
-                                <h1>Deadline</h1>
-                                <p class="cur-time"></p>
-                            </div>
-                            <button id="last-button" class="completed btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                 </div>
-
-
-
-                 <!-- Dashboard left part end -->
+                <div class="task">
+                  <h2 class="font-bold">Task Assign</h2>
+                  <strong id="Task-assign" class="text-center ml-5">6</strong>
+                </div>
+              </div>
+              <div
+                id="discover-today"
+                class="disconver-midlle-continer flex gap-4 items-center justify-start bg-[linear-gradient(130.7deg,rgb(55,82,253)0.42%,rgb(108,127,250)52.66%,rgb(155,168,248)99.73%)] rounded-xl shadow-xl px-40 cursor-pointer"
+              >
+                <div class="icon">
+                  <img src="./assets/board.png" alt="" />
+                </div>
+                <div class="discover">
+                  <p class="text-white">
+                    Discover Something <br />
+                    New Today!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="disconver-right-continer flex gap-4 items-start justify-center bg-[rgb(244,247,255)] rounded-xl shadow-xl p-8 px-14"
+              >
+                <div class="icon">
+                  <img src="./assets/calender.png" alt="" />
+                </div>
+                <div id="history-time" class="task"></div>
+              </div>
+            </div>
+            <!-- Dashboard 6 card grid Layout -->
+            <div class="six-card-grid-container grid grid-cols-3 gap-4 py-7">
+              <!-- single card-container 1-->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4"
+                  >ShopEase</span
+                >
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly <br />
+                  and ensure onClick works properly
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button class="completed btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- single card-container 2-->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4"
+                  >CloudSync</span
+                >
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Add Dark Mode
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Store the user's preference in localStorage, update CSS
+                  variables dynamically, and apply a smooth transition effect.
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button class="completed btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- single card-container 3-->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4"
+                  >SwiftPay</span
+                >
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Optimize Home page 
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button class="completed btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- single card-container 4 -->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4">Meta</span>
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Add new emoji 🤲
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button class="completed btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- single card-container 5-->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4"
+                  >Google LLC</span
+                >
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Integrate OpenAI API
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button class="completed btn btn-primary">Completed</button>
+                </div>
+              </div>
+              <!-- single card-container 6-->
+              <div
+                class="card-item-container bg-[rgb(244,247,255)] rounded-lg shadow-md p-8"
+              >
+                <span class="bg-[rgb(255,255,255)] rounded-lg p-4"
+                  >Glassdoar</span
+                >
+                <h4 class="card-title mt-5 mb-5 font-bold p-1">
+                  Improve Job searching
+                </h4>
+                <p class="bg-[rgb(255,255,255)] p-3 mb-4 rounded-lg">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+                <div
+                  class="deadline-container flex items-center justify-between"
+                >
+                  <div class="date">
+                    <h1>Deadline</h1>
+                    <p class="cur-time"></p>
+                  </div>
+                  <button id="last-button" class="completed btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <!-- Dashboard Right Part -->
-            <div class="dash-board-right w-[500px] bg-[rgb(255,255,255)] rounded-xl shadow-xl p-10">
-                <div class="log-container mb-3">
-                    <div class="icon flex justify-center items-center gap-3 py-2">
-                        <img src="./assets/activity.png" alt="">
-                        <div class="textt">Activity Log</div>
-                    </div>
-                    <button id="clear-history" class="btn btn-primary mt-5">Clear History</button>
-                </div>
-                <hr">
-                <!-- Message container -->
-                 <div id="message-box" class="message-conatiner grid grid-cols-1 gap-4">
+            <!-- Dashboard left part end -->
+          </div>
 
-                 </div>
+          <!-- Dashboard Right Part -->
+          <div
+            class="dash-board-right w-[500px] bg-[rgb(255,255,255)] rounded-xl shadow-xl p-10"
+          >
+            <div class="log-container mb-3">
+              <div class="icon flex justify-center items-center gap-3 py-2">
+                <img src="./assets/activity.png" alt="" />
+                <div class="textt font-bold">Activity Log</div>
+              </div>
+              <button id="clear-history" class="btn btn-primary mt-5">
+                Clear History
+              </button>
             </div>
+            <hr">
+            <!-- Message container -->
+            <div
+              id="message-box"
+              class="message-conatiner grid grid-cols-1 gap-4"
+            ></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-
-
-
-<!-- 
+      <!-- 
     
 
 1.Alert Board updated Successfully ====done
@@ -188,19 +273,20 @@
 6. activity log e message jabe You have completed+ dynamic title +  dynamict time ====== done
 7.clear history button e click korle shob remove hobe =====done
 8.All html time dynamic ==== done
-9. theme change 
-10. discover section click to new page redirect
+9. theme change ======done
+10. discover section click to new page redirect ====== done
 11. design correction
-
+    border top bar
+12. back to desk button
+13. blog page desing
 
 -->
-
-
-
-
-
+      <script>
+        
+     
+      </script>
     </section>
     <script src="./scripts/utilities.js"></script>
     <script src="./scripts/main.js"></script>
-</body>
+  </body>
 </html>

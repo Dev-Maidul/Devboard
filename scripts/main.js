@@ -38,7 +38,7 @@ for(let i=0; i<completedButton.length; i++)
     let curTime=new Date().toLocaleString();
     let div=document.createElement('div');
     div.innerHTML=`
-        You have completed <strong>${cardTitle}</strong> at ${curTime}
+        <strong>You have completed ${cardTitle} at ${curTime}</strong>
     `
     div.classList.add('bg-gray-100', 'rounded-lg', 'shadow-sm', 'p-4');
      document.getElementById('message-box').appendChild(div);
@@ -53,3 +53,19 @@ document.getElementById('clear-history').addEventListener('click',function(event
 
 
 })
+// Discover today 
+const discover=document.getElementById('discover-today').addEventListener('click',function(event){
+    window.location.href='blog.html';
+})
+   //   back to desk button
+
+
+// Coler picker
+document.getElementById("theme").addEventListener("click", function () {
+    const themeColor = `rgb(${Math.floor(
+      Math.random() * 256
+    )}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+      Math.random() * 256
+    )})`;
+    document.body.style.backgroundColor = themeColor;
+  });
