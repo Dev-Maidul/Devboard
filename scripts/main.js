@@ -1,4 +1,7 @@
 let completedButton= document.querySelectorAll('.completed');
+let numberofTask=completedButton.length;
+document.getElementById('Task-assign').innerText=numberofTask;
+console.log(numberofTask);
 // all Dynamic time and date
 let cardCurTime=new Date();
 let timeFormat=timeAndDate(cardCurTime);
