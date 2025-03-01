@@ -23,7 +23,65 @@
                 
         </nav>
     </header>
+    <!-- blog section -->
+    <section class="grid grid-cols-1 gap-2">
+        <h1 class="font-bold text-2xl text-center">Blogs</h1>
+        <div class="qn-container">
+            <div class="question bg-white p-3 rounded-lg mt-4 border-b-[1px] border-gray-500 border-dashed">
+                <h1 class="font-bold py-3">Question-1: What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div class="answer bg-white p-3 rounded-lg">
+                <p>
+                    There are several types of way to select an element in DOM.It's depend on which types of functionality I want to add.For instance 1.getElementById() if need any specific one element in that situation we can use it. 2. getElementsByClassName() If we need multiple same type element it that case we can give a same class name and select them by this method. 3.getElementsByTagName() we can sellect all same tags by this selector. 4. querySelector() It will return me the first element of same class name of multiple elements. 5. querySelectorAll() Selects all elements that match a CSS selector (returns a NodeList). Without these there are also some selector like getAttribute(),parentNode, childNodes, firstChild, lastChild, nextSibling, previousSibling and so on.
+                </p>
+            </div>
+        </div>
+        <div class="qn-container">
+            <div class="question bg-white p-3 rounded-lg mt-4 border-b-[1px] border-gray-500 border-dashed">
+                <h1 class="font-bold py-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            </div>
+            <div class="answer bg-white p-3 rounded-lg">
+                <p>
+                    Here is the key diffrence between innerHTML,innerText and textContent.
+                    innerHTML returns the whole html for example with class name , text and others, On the otherhand inner returns only the text of a html tags. In the same way textContent returns only the text or content from a div or section.
+                </p>
+            </div>
+        </div>
+        <div class="qn-container">
+            <div class="question bg-white p-3 rounded-lg mt-4 border-b-[1px] border-gray-500 border-dashed">
+                <h1 class="font-bold py-3">Question-3: What is event delegation in the DOM?</h1>
+            </div>
+            <div class="answer bg-white p-3 rounded-lg">
+                <p>Event delegation is one of the most powerfull technic in JavaScript to implement adding event listener to a parent element rather than adding with every single or child elements. Mainly it decrease the code repeatation and increase the programe efficiency so that code look like very clean and structured without it most interesting part is it can handle the event dynam if we add new elements</p>
+            </div>
+        </div>
+        <div class="qn-container">
+            <div class="question bg-white p-3 rounded-lg mt-4 border-b-[1px] border-gray-500 border-dashed">
+                <h1 class="font-bold py-3">Question-4: What is event bubbling in the DOM?
+                </h1>
+            </div>
+            <div class="answer bg-white p-3 rounded-lg">
+                <p>Event bubbling is one of the familiar technic in java script to add an event.There are mainly two phases in event bubbling.1. Captureing phase it work mainly from parent node to child node whearas it not find the target event. 2. Event bubbling event this phase work reversly from the target node/child to parent node. Without it, parent elemnts can listen for events triggerd on child elements. and we can stop the bubbling proces using stopPropagation() and stopImmediatePropagation();</p>
+            </div>
+        </div>
+        <div class="qn-container">
+            <div class="question bg-white p-3 rounded-lg mt-4 border-b-[1px] border-gray-500 border-dashed">
+                <h1 class="font-bold py-3">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+            </div>
+            <div class="answer bg-white p-3 rounded-lg pb-4">
+                <p>We can create element in dom using document.createElement() this method and also can add elemnt by following innerHTML,innerText and textContent also can use appendChild(), insertBefore() etc. Removing element from dom can use removeChild() ,remove() these methods.</p>
+            </div>
+        </div>
+     </section>
     </section>
+    
+
+
+
+
+
+
     <script>
         document.getElementById('back-to-desk').addEventListener('click',function(){
             window.location.href='index.html';
