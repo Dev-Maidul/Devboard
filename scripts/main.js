@@ -57,7 +57,7 @@ document.getElementById('clear-history').addEventListener('click',function(event
 const discover=document.getElementById('discover-today').addEventListener('click',function(event){
     window.location.href='blog.html';
 })
-   //   back to desk button
+
 
 
 // Coler picker
